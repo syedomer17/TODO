@@ -48,8 +48,9 @@
                 editBtn.classList.add("btn", "btn-warning");
                 editBtn.textContent = "Edit";
                 editBtn.addEventListener('click', () => {
-                    const newTaskText = prompt("Edit your task:", taskContent.textContent);
+                    const newTaskText = prompt("Edit your task:", taskContent.textContent );
                     if (newTaskText) {
+                       
                         taskContent.textContent = newTaskText;
                     }
                 });
